@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Товарная накладная</title>
+</head>
+
+<body>
+    <div class="wrap">
+        <table class="chapter-one">
+            <tr>
+                <td colspan="6" class="hidden"></td>
+                <td>Код</td>
+            </tr>
+            <tr>
+                <td colspan="6" class="hidden">Форма по ОКУД</td>
+                <td>000000</td>
+            </tr>
+            <tr>
+                <td colspan="5" class="hidden border-b">"Дотавка всего и даже запрещенки", г. Запердрищенск, 7-15-05,
+                    БИК Хуик, р/сч хует</td>
+                <td class="hidden">по ОКПО</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td colspan="5" class="hidden border-b"><sup>(организация, грузоотправитель, адрес, номер телефона,
+                        факса, банковские реквезиты)</sup>Какое-то подразделение</td>
+                <td class="hidden border-b"></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td colspan="1" class="hidden"><sup>(структурное подразделение)</sup></td>
+                <td class="hidden text-r" colspan="4">Вид деятельности</td>
+                <td class="hidden">по ОКВЭД</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="hidden">Грузополучатель</td>
+                <td class="hidden border-b" colspan="4">Склад-РФ г.Ангарск, 57-85-99, БИК 52500248 р/сч 125800001587
+                </td>
+                <td class="hidden">по ОКПО</td>
+                <td>00000000</td>
+            </tr>
+            <tr>
+                <td class="hidden">Поставщик</td>
+                <td class="hidden border-b" colspan="4"><sup>(наименование организации, адрес, номер телефона,
+                        банковские реквезиты)</sup>Посылочка-РУ г.Москва, 8-455-698-745-54-87, БИК 1000487 р/сч
+                    1547900095</td>
+                <td class="hidden">по ОКПО</td>
+                <td>11111111</td>
+            </tr>
+            <tr>
+                <td class="hidden">Плательщик</td>
+                <td class="hidden border-b" colspan="4"><sup>(наименование организации, адрес, номер телефона,
+                        банковские реквезиты)</sup>ИП Петров Иван Андреевич, Иркутск, 53-17-56, БИК 1000485 р/сч
+                    1547000087445</td>
+                <td class="hidden">по ОКПО</td>
+                <td>22222222</td>
+            </tr>
+            <tr>
+                <td class="hidden">Основание</td>
+                <td class="hidden border-b" colspan="4"><sup>(наименование организации, адрес, номер телефона,
+                        банковские реквезиты)</sup>Договор №1234-22 от 12.05.2022</td>
+                <td>номер</td>
+                <td>33333333</td>
+            </tr>
+            <tfoot>
+                <tr>
+                    <td class="hidden"></td>
+                    <td colspan="4" class="hidden cell-long"><sup>(наименование документа (договор, контракт,
+                            заказ-наряд))</sup></td>
+                    <td>дата</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td rowspan="2" colspan="2" class="hidden text-r name-doc">ТОВАРНАЯ НАКЛАДНАЯ</td>
+                    <td class="cell-second">Номер документа</td>
+                    <td class="cell-third">Дата составления</td>
+                    <td rowspan="2" class="hidden cell-fourth">Транспортная накладная</td>
+                    <td class="cell-fifth">номер</td>
+                    <td class="cell-sixth"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>дата</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td colspan="5" class="hidden"></td>
+                    <td class="hidden">Вид операции</td>
+                    <td></td>
+                </tr>
+            </tfoot>
+        </table>
+        <table class="chapter-two">
+            <thead>
+                <tr>
+                    <th rowspan="2">Но-<br>мер<br>по<br>по-<br>рядку</th>
+                    <th colspan="2">Товар</th>
+                    <th colspan="2">Единица измерения</th>
+                    <th rowspan="2">Вид упаковки</th>
+                    <th colspan="2">Коли-<br>чество</th>
+                    <th rowspan="2">Масса брутто</th>
+                    <th rowspan="2">Коли-<br>чество (масса нетто)</th>
+                    <th rowspan="2">Цена, руб. коп.</th>
+                    <th rowspan="2">Сумма без учета НДС, руб. коп.</th>
+                    <th colspan="2">НДС</th>
+                    <th rowspan="2">Сумма с учетом НДС, руб. коп.</th>
+                </tr>
+                <tr>
+                    <th>наименование, характеристика, сорт, артикул товара</th>
+                    <th>код</th>
+                    <th>наиме-<br>нование</th>
+                    <th>код по ОКЕИ</th>
+                    <th>в одном месте</th>
+                    <th>мест, штук</th>
+                    <th>ставка, %</th>
+                    <th>сумма, руб. коп.</th>
+                </tr>
+                <tr>
+                    <th class="chapter-two-cell-one">1</th>
+                    <th class="chapter-two-cell-two">2</th>
+                    <th>3</th>
+                    <th>4</th>
+                    <th>5</th>
+                    <th>6</th>
+                    <th>7</th>
+                    <th>8</th>
+                    <th>9</th>
+                    <th>10</th>
+                    <th>11</th>
+                    <th>12</th>
+                    <th>13</th>
+                    <th>14</th>
+                    <th>15</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- <tr class="count">
+                    <td><span></span></td>
+                    <td>Lorem tempora numquam modi!</td>
+                    <td>3x</td>
+                    <td>вибратор</td>
+                    <td>ххх</td>
+                    <td>кожаный чехол</td>
+                    <td>20</td>
+                    <td>2</td>
+                    <td>5 кг</td>
+                    <td>3,8 кг</td>
+                    <td>567.00.50</td>
+                    <td>1000021.021</td>
+                    <td>12</td>
+                    <td>123/00099</td>
+                    <td>123.000.00</td>
+                </tr> -->
+                <!-- <tr class="count">
+                    <td><span></span></td>
+                    <td>Lorem tempora numquam modi!</td>
+                    <td>3x</td>
+                    <td>вибратор</td>
+                    <td>ххх</td>
+                    <td>кожаный чехол</td>
+                    <td>20</td>
+                    <td>2</td>
+                    <td>5 кг</td>
+                    <td>3,8 кг</td>
+                    <td>567.00.50</td>
+                    <td>1000021.021</td>
+                    <td>12</td>
+                    <td>123/00099</td>
+                    <td>123.000.00</td>
+                </tr> -->
+                <!-- <tr class="count">
+                    <td><span></span></td>
+                    <td>Lorem tempora numquam modi!</td>
+                    <td>3x</td>
+                    <td>вибратор</td>
+                    <td>ххх</td>
+                    <td>кожаный чехол</td>
+                    <td>20</td>
+                    <td>2</td>
+                    <td>5 кг</td>
+                    <td>3,8 кг</td>
+                    <td>567.00.50</td>
+                    <td>1000021.021</td>
+                    <td>12</td>
+                    <td>123/00099</td>
+                    <td>123.000.00</td>
+                </tr> -->
+                <!-- <tr class="count">
+                    <td><span></span></td>
+                    <td>Lorem tempora numquam modi!</td>
+                    <td>3x</td>
+                    <td>вибратор</td>
+                    <td>ххх</td>
+                    <td>кожаный чехол</td>
+                    <td>20</td>
+                    <td>2</td>
+                    <td>5 кг</td>
+                    <td>3,8 кг</td>
+                    <td>567.00.50</td>
+                    <td>1000021.021</td>
+                    <td>12</td>
+                    <td>123/00099</td>
+                    <td>123.000.00</td>
+                </tr> -->
+                <!-- <tr class="count">
+                    <td><span></span></td>
+                    <td>Lorem tempora numquam modi!</td>
+                    <td>3x</td>
+                    <td>вибратор</td>
+                    <td>ххх</td>
+                    <td>кожаный чехол</td>
+                    <td>20</td>
+                    <td>2</td>
+                    <td>5 кг</td>
+                    <td>3,8 кг</td>
+                    <td>567.00.50</td>
+                    <td>1000021.021</td>
+                    <td>12</td>
+                    <td>123/00099</td>
+                    <td>123.000.00</td>
+                </tr> -->
+                <tr class="count">
+                    <td><span></span></td>
+                    <td>Lorem tempora numquam modi!</td>
+                    <td>3x</td>
+                    <td>вибратор</td>
+                    <td>ххх</td>
+                    <td>кожаный чехол</td>
+                    <td>20</td>
+                    <td>2</td>
+                    <td>5 кг</td>
+                    <td>3,8 кг</td>
+                    <td>567.00.50</td>
+                    <td>1000021.021</td>
+                    <td>12</td>
+                    <td>123/00099</td>
+                    <td>1.123.000.000.00</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="7">Всего по накладной</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>X</td>
+                    <td></td>
+                    <td>X</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tfoot>
+        </table>
+        <div class="wrap-chapter-three">
+            <div class="chapter-three-item">
+                <span>Товарная накладная имеет приложение на </span>
+                <span class="bottom-line"></span>
+                <span>листах</span><br>
+            </div>
+            <div class="chapter-three-item">
+                <span>и содержит </span>
+                <span class="bottom-line"></span>
+                <span>порядковых номеров записей</span>
+                <sup>(прописью)</sup>
+            </div>
+            <table class="about-weight">
+                <tr>
+                    <td colspan="3" class="weight-cell-one">Массса груза (нетто)</td>
+                    <td class="weight-cell-line-bottom"></td>
+                    <td class="weight-cell-line-bold"></td>
+                </tr>
+                <tr>
+                    <td>Всего мест</td>
+                    <td class="weight-cell-line-bottom"></td>
+                    <td>Масса груза (брутто)</td>
+                    <td class="weight-cell-line-bottom text-top"><sup>(прописью)</sup></td>
+                    <td class="weight-cell-line-bold"></td>
+                </tr>
+                <tr>
+                    <td class="hidden"></td>
+                    <td class="hidden text-top"><sup>(прописью)</sup></td>
+                    <td class="hidden"></td>
+                    <td class="hidden text-top"><sup>(прописью)</sup></td>
+                    <td class="hidden"></td>
+                </tr>
+            </table>
+        </div>
+        <div class="wrap-chapter-fourth">
+            <div class="chapter-fourth-item left">
+                <div class="string-1 string">
+                    <span>Приложение (паспорта, сертификаты и т.п.) на</span>
+                    <span class="line-bottom line-1">
+                        <sup>(прописью)</sup>
+                    </span>
+                    <span>листах</span>
+                </div>
+                <div class="string-2 string">
+                    <span>Всего отпущено на сумму</span>
+                    <span class="line-bottom line-1">
+                        <sup>(прописью)</sup>
+                    </span>
+                </div>
+                <div class="string-3 string">
+                    <span class="line-bottom line-1"></span>
+                    <span>руб. </span>
+                    <span class="line-bottom line-2"></span>
+                    <span>коп.</span>
+                </div>
+                <div class="string-4 string">
+                    <span>Отпуск разрешил</span>
+                    <span class="line-bottom line-1">
+                        <sup>(должность)</sup>
+                    </span>
+                    <span class="line-bottom line-2">
+                        <sup>(подпись)</sup>
+                    </span>
+                    <span class="line-bottom line-3">
+                        <sup>(расшифровка подписи)</sup>
+                    </span>
+                </div>
+                <div class="string-5 string">
+                    <span>Главный (старший) бухгалтер</span>
+                    <span class="line-bottom line-1">
+                        <sup>(подпись)</sup>
+                    </span>
+                    <span class="line-bottom line-2">
+                        <sup>(расшифровка подписи)</sup>
+                    </span>
+                </div>
+                <div class="string-6 string">
+                    <span>Отпуск груза произвел</span>
+                    <span class="line-bottom line-1">
+                        <sup>(должность)</sup>
+                    </span>
+                    <span class="line-bottom line-2">
+                        <sup>(подпись)</sup>
+                    </span>
+                    <span class="line-bottom line-3">
+                        <sup>(расшифровка подписи)</sup>
+                    </span>
+                </div>
+                <div class="string-7">
+                    <span>М.П.</span>
+                    <span>"___"
+                    </span>
+                    <span>__________________________
+                    </span>
+                    <span>__________г.
+                    </span>
+                </div>
+            </div>
+            <div class="chapter-fourth-line"></div>
+            <div class="chapter-fourth-item right">
+                <div class="string-1 string">
+                    <span>По доверенности №_________________</span>
+                    <span>от</span>
+                    <span>"___"
+                    </span>
+                    <span>_______________
+                    </span>
+                    <span>__________г.
+                    </span>
+                </div>
+                <div class="string-2 string">
+                    <span>выданной</span>
+                    <span class="line-bottom line-1">
+                        <sup>(кем, кому, место работы, должность, фамилия и. о.)</sup>
+                    </span>
+                </div>
+                <div class="string-3 string">
+                    <span class="line-bottom line-1">
+                    </span>
+                </div>
+                <div class="string-4 string">
+                    <span class="line-bottom line-1">
+                    </span>
+                </div>
+                <div class="string-5 string">
+                    <span>Груз принял</span>
+                    <span class="line-bottom line-1">
+                        <sup>(должность)</sup>
+                    </span>
+                    <span class="line-bottom line-2">
+                        <sup>(подпись)</sup>
+                    </span>
+                    <span class="line-bottom line-3">
+                        <sup>(расшифровка подписи)</sup>
+                    </span>
+                </div>
+                <div class="string-6 string">
+                    <span>Груз получил грузополучатель</span>
+                    <span class="line-bottom line-1">
+                        <sup>(должность)</sup>
+                    </span>
+                    <span class="line-bottom line-2">
+                        <sup>(подпись)</sup>
+                    </span>
+                    <span class="line-bottom line-3">
+                        <sup>(расшифровка подписи)</sup>
+                    </span>
+                </div>
+                <div class="string-7">
+                    <span>М.П.</span>
+                    <span>"___"
+                    </span>
+                    <span>__________________________
+                    </span>
+                    <span>__________г.
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
