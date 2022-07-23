@@ -1,5 +1,5 @@
 html {
-    font-size: 8pt;
+    font-size: 10pt;
 }
 * {
     margin: 0;
@@ -14,12 +14,65 @@ html {
 }
 
 .chapter-one td {
-    padding: 0 5px;
+    padding: 3px 0;
 }
 
-td {
+.chapter-one tr {
+    min-height: 6mm;
+}
+
+.chapter-one .bottom-text {
+    font-size: 5pt;
+    text-align: center;
+    vertical-align: top;
+    border: none;
+    padding: 0;
+}
+
+.chapter-one .bottom-row {
+    min-height: auto;
+
+}
+
+.border-all {
     border: 1px solid black;
-    min-height: min-content;
+}        
+
+.border-top-none {
+    border-top: none;
+}
+
+.border-bottom-none {
+    border-bottom: none;
+}
+
+.border-bottom {
+    border-bottom: 1px solid #000;
+}
+
+.chapter-one tr td:last-child {
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+}
+
+.chapter-one tr:nth-child(1) td:last-child {
+    border: 1px solid black;
+}
+
+.chapter-one tr:nth-child(2) td:last-child {
+    border-top: 2px solid black;
+}
+
+.chapter-one tr:nth-child(2n + 7) td:nth-child(2) {
+    padding: 3px 10px;
+}
+
+.chapter-one tr:nth-child(2n + 7) td:nth-child(1) {
+    padding-right: 10px;
+}
+
+.wrap .chapter-one tr:nth-child(n + 14) td {
+    padding: 3px 0;
 }
 
 .wrap {
@@ -28,88 +81,7 @@ td {
 }
 
 span {
-    display: inline-block;
-}
-
-sup {
     display: block;
-    font-family: "calibri";
-    font-size: 7pt;
-    padding-left: 20px;
-}
-
-.text-l {
-    text-align: left;
-}
-
-.hidden {
-    border: none;
-}
-
-.border-b {
-    border-bottom: 1px solid black;
-}
-
-.cell-fourth {
-    min-width: 32mm;
-    width: max-content;
-}
-
-.chapter-one tr td:last-child {
-    text-align: center;
-    border-left-width: 2px;
-    border-right-width: 2px;
-}
-
-.chapter-one tr td:nth-last-child(2){
-    text-align: right;
-    width:fit-content;
-    vertical-align: bottom;
-}
-
-.chapter-one tr td:nth-last-child(3){
-    text-align:left;
-}
-
-.wrap .chapter-one tr .text-r {
-    text-align: right;
-}
-
-.cell-third {
-    width: 30mm;
-}
-
-.cell-second {
-    width: 30mm;
-}
-
-.cell-fourth {
-    width: 45mm;
-}
-
-.cell-fifth {
-    width: 25mm;
-}
-
-.cell-sixth {
-    width: 35mm;
-}
-
-.cell-long {
-    width: 190mm;
-}
-
-.name-doc {
-    vertical-align: bottom;
-    font-weight: bold;
-}
-
-.chapter-one tfoot tr:last-child td {
-    border-bottom-width: 2px;
-}
-
-.chapter-one tfoot {
-    padding: 10px 0 10px 0;
 }
 
 .chapter-two td, .chapter-two th {
@@ -147,188 +119,7 @@ sup {
     counter-increment: item;
 }
 
-
 .chapter-two .count span::before {
     content: counter(item);
 }
 
-.wrap-chapter-three {
-    padding-left: 10mm;
-}
-
-.bottom-line {
-    display: inline-block;
-    width: 60%;
-    border-bottom: 1px solid rgb(100, 99, 99);
-}
-
-.chapter-three-item {
-    margin-bottom: 10px;
-    width: 90%;
-}
-
-.chapter-three-item sup {
-    text-align: center;
-}
-
-.about-weight {
-    border-collapse: collapse;
-    width: 100%;
-}
-
-.about-weight td {
-    padding: 0  10px 0 0;
-    border: none;
-    height: 5mm;
-}
-
-.about-weight .weight-cell-line-bottom {
-    border-bottom: 1px solid black;
-    width: 30%;
-}
-
-.text-top {
-    text-align: center;
-    vertical-align:top;
-}
-
-.weight-cell-one {
-    text-align: right;
-}
-
-.about-weight .weight-cell-line-bold {
-    border: 2px solid black;
-    width: 52mm;
-}
-
-.line-bottom {
-    border-bottom: 1px solid black;
-    margin: 0 2px;
-    position: relative;
-}
-
-.wrap-chapter-fourth {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-}
-
-.chapter-fourth-item.left {
-    width: 50%;
-}
-
-.chapter-fourth-line {
-    width: 2px;
-    border: 1px solid black;
-    margin: 0 10px;
-}
-
-.left .string-2 .line-1 {
-    width: 9cm;
-}
-
-.left .string-1 .line-1 {
-    width: 5cm;
-}
-
-.left .string-3 .line-1 {
-    width: 9cm;
-}
-
-.left .string-3 .line-2 {
-    width: 2cm;
-}
-
-.left .string-4 .line-1 {
-    width: 2.5cm;
-}
-
-.left .string-6 .line-1 {
-    width: 3cm;
-}
-
-.left .string-4 .line-2, .left .string-5 .line-1, .left .string-6 .line-2 {
-    width: 2cm;
-}
-
-.left .string-4 .line-3, .left .string-5 .line-2 {
-    width: 5.5cm;
-}
-
-.left .string-6 .line-3 {
-    width: 4.5cm;
-}
-
-.wrap-chapter-fourth sup {
-    left: 50%;
-    position: absolute;
-    top: 1px;
-    padding: 0;
-    transform: translateX(-50%);
-}
-
-.chapter-fourth-item {
-    display: flex;
-    flex-direction: column;
-}
-
-.string-7>span:first-child {
-    margin-right: 70px;
-}
-
-.left .string-6 .line-3 sup{
-    white-space: nowrap;
-}
-
-.left .string-7 {
-    text-align: center;
-}
-
-.string {
-    margin-bottom: 15px;
-}
-
-.string-6 {
-    margin-bottom: 35px;
-}
-
-.chapter-fourth-item.right {
-    width: 50%;
-}
-
-
-.right .string-2 .line-1 {
-    width: 10cm;
-}
-
-.right .string-2 .line-1 sup, .right .string-6 .line-3 sup{
-    white-space: nowrap;
-}
-
-.string-3 .line-1, .string-4 .line-1 {
-    width: 100%;
-}
-
-.right .string-5 .line-1 {
-    width: 3cm;
-}
-
-.right .string-5 .line-2 {
-    width: 2cm;
-}
-
-.right .string-5 .line-3 {
-    width: 5.5cm;
-}
-
-.right .string-6 .line-1 {
-    width: 2.5cm;
-}
-
-.right .string-6 .line-2 {
-    width: 2cm;
-}
-
-.right .string-6 .line-3 {
-    width: 3.5cm;
-}
