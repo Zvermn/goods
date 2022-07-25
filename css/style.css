@@ -7,21 +7,25 @@ html {
     box-sizing: border-box;
 }
 
+.chapter-one {
+    height: 10cm;
+}
+
 .chapter-one, .chapter-two {
     border-collapse: collapse;
     width: 100%;
-    margin-bottom: 15px;
+    margin-bottom: 0.3cm;
 }
 
 .chapter-one td {
-    padding: 3px 0;
+    padding: 3px 3px;
 }
 
 .chapter-one tr {
-    min-height: 6mm;
+    height: 4mm;
 }
 
-.chapter-one .bottom-text {
+ .bottom-text {
     font-size: 5pt;
     text-align: center;
     vertical-align: top;
@@ -29,9 +33,16 @@ html {
     padding: 0;
 }
 
-.chapter-one .bottom-row {
-    min-height: auto;
+.chapter-one .view {
+    font-size: 10pt;
+    text-align: right;
+    vertical-align: top;
+    padding-right: 3px ;
+}
 
+ .wrap .bottom-row {
+    min-height: auto;
+    height: 2mm;
 }
 
 .border-all {
@@ -50,34 +61,52 @@ html {
     border-bottom: 1px solid #000;
 }
 
-.chapter-one tr td:last-child {
+.border-bold-left-right {
     border-left: 2px solid black;
     border-right: 2px solid black;
 }
 
-.chapter-one tr:nth-child(1) td:last-child {
-    border: 1px solid black;
+.border-bold-top {
+    border-top: 2px solid black ;
 }
 
-.chapter-one tr:nth-child(2) td:last-child {
-    border-top: 2px solid black;
+.border-bold-bottom {
+    border-bottom: 2px solid black ;
 }
 
-.chapter-one tr:nth-child(2n + 7) td:nth-child(2) {
-    padding: 3px 10px;
+.text-right {
+    text-align: right;
 }
 
-.chapter-one tr:nth-child(2n + 7) td:nth-child(1) {
-    padding-right: 10px;
+.text-center {
+    text-align: center;
 }
 
-.wrap .chapter-one tr:nth-child(n + 14) td {
-    padding: 3px 0;
+.size-1 {
+    width: 3cm;
+}
+
+.size-2 {
+    text-transform: uppercase;
+    text-align: right;
+    vertical-align: bottom;
+    font-weight: bold ;
+}
+
+.size-3 {
+    width: 4cm;
+    text-align: right;
+    vertical-align: top;
+}
+
+.size-4 {
+    width: 19mm;
 }
 
 .wrap {
     width: 28cm;
     margin: 0 auto;
+    padding-bottom: 1cm;
 }
 
 span {
@@ -123,3 +152,201 @@ span {
     content: counter(item);
 }
 
+.chapter-free {
+    margin-left: 1cm;
+    border-collapse: collapse;
+}
+
+.chapter-free td {
+    vertical-align: bottom;
+
+}
+
+.chapter-free .size-3-1 {
+    width: 10cm;
+}
+
+.chapter-free .size-3-2 {
+    width: 5cm;
+}
+
+.chapter-free tr {
+    height: 6mm;
+}
+
+.chapter-four {
+    border-collapse:collapse;
+    width: inherit;
+    margin-bottom: 20px;
+}
+
+.chapter-four tr {
+    height: 6mm;
+    vertical-align: bottom;
+}
+
+.chapter-four tr:first-child {
+    height: 8mm;
+}
+
+.chapter-four .size-4-1 {
+    width: 8cm;
+}
+.chapter-four .size-4-2 {
+    width: 8cm;
+}.chapter-four .size-4-3 {
+    width: 5cm;
+}
+
+.chapter-four .first-cell {
+    padding-left: 1cm;
+    vertical-align: bottom;
+}
+
+.chapter-five-left {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.size-5-2 {
+    width: 1cm;
+}
+
+.size-5-1 {
+    width: 4cm;
+}
+
+.size-5-3 {
+    width: 3cm;
+}
+
+.size-5-4 {
+    width: 1cm;
+}
+
+.size-5-5 {
+    width: 1cm;
+}
+
+.five-2-left {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.size-5-2-1 {
+    width: 5cm;
+
+}
+.size-5-2-2 {
+    width: 4cm;
+}
+.size-5-2-3 {
+    width: 2.5cm;
+}
+.size-5-2-4 {
+    width: 4cm;
+}
+
+.size-around {
+    width: 2mm;
+}
+
+.item-2 {
+    border-left: 1px solid black;
+    margin: 0 3mm;
+}
+
+.wrap-flex {
+    display: flex;
+}
+.item-1 {
+    width: 55%;
+}
+.item-3 {
+    width: 45%;
+}
+
+.item-3 table{
+    border-collapse: collapse;
+}
+.size-5-3-1 {
+    width: 3.2cm;
+}
+.size-5-3-2 {
+    width: 3cm;
+}
+.size-5-3-3 {
+    width: 0.5cm;
+}
+.size-5-3-4 {
+    width: 2cm;
+}
+.size-5-3-5 {
+    width: 1cm;
+}
+
+.size-5-3-6 {
+    width: 11cm;
+}
+
+.wrap-flex tr {
+    height: 4mm;
+    vertical-align: bottom;
+}
+
+.wrap-flex .over-height {
+    height: 6mm;
+}
+
+.size-5-4-1 {
+    width: 2cm;
+}
+.size-5-4-2 {
+    width: 3cm;
+}
+
+.size-5-4-3 {
+    width: 3cm;
+}
+
+.size-5-4-4 {
+    width: 5cm;
+}
+
+.size-5-5-1 {
+    width: 5.8cm;
+}
+.size-5-5-2 {
+    width: 3cm;
+}
+.size-5-5-3 {
+    width: 2cm;
+}
+.size-5-5-4 {
+    width: 4.5cm;
+}
+
+.stamp {
+    width: 100%;
+    border-collapse: separate;
+}
+
+.stamp td {
+    width: 1mm;
+}
+
+.stamp .size-1-st {
+    width: 5cm;
+}
+
+.stamp .size-2-st {
+    width: 0.5cm;
+}
+
+.stamp .size-3-st {
+    width: 1cm;
+}
+
+.stamp .size-4-st {
+    width: 1cm;
+}
