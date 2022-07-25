@@ -18,11 +18,24 @@ html {
 }
 
 .chapter-one td {
-    padding: 3px 3px;
+    padding: 0px 3px;
 }
 
 .chapter-one tr {
-    height: 4mm;
+    height: 3mm;
+}
+
+.chapter-two  thead {
+    font-size: 8pt;
+    line-height: 0.95;
+}
+
+.chapter-two  thead th {
+    height: 2mm;
+}
+
+.chapter-two td {
+    font-size: 8pt;
 }
 
  .bottom-text {
@@ -118,7 +131,7 @@ span {
 }
 
 .chapter-two td, .chapter-two th {
-    padding: 2px 5px;
+    padding: 0px 5px;
 }
 
 .chapter-two-cell-one {
@@ -171,7 +184,7 @@ span {
 }
 
 .chapter-free tr {
-    height: 6mm;
+    height: 5mm;
 }
 
 .chapter-four {
@@ -181,12 +194,12 @@ span {
 }
 
 .chapter-four tr {
-    height: 6mm;
+    height: 5mm;
     vertical-align: bottom;
 }
 
 .chapter-four tr:first-child {
-    height: 8mm;
+    height: 7mm;
 }
 
 .chapter-four .size-4-1 {
@@ -290,12 +303,12 @@ span {
 }
 
 .wrap-flex tr {
-    height: 4mm;
+    height: 3mm;
     vertical-align: bottom;
 }
 
 .wrap-flex .over-height {
-    height: 6mm;
+    height: 5mm;
 }
 
 .size-5-4-1 {
